@@ -5,7 +5,7 @@ export default function Header() {
   const { pathname } = location;
   const { category } = useParams();
 
-  console.log(location);
+
 
   return (
     <div
@@ -15,11 +15,11 @@ export default function Header() {
     >
       <div className="flex items-center w-full h-6 justify-around">
         <div className="flex gap-[40%] mt-8 items-center">
-          <img src="./assets/Group.svg" className="w-4 h-[15px]" alt="Menu" />
-          <img src="./assets/header.svg" className="h-[25px]" alt="" />
+          <img src="/assets/Group.svg" className="w-4 h-[15px]" alt="Menu" />
+          <img src="/assets/header.svg" className="h-[25px]" alt="" />
         </div>
         <img
-          src="./assets/cart.svg"
+          src="/assets/cart.svg"
           className="w-[23px] h-[20px] self-center mt-7"
           alt=""
         />

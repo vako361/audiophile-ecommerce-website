@@ -2,8 +2,8 @@ import { useParams } from "react-router-dom"
 import data from '../data/data.json'
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Description from "../components/Description"
 import Gallery from "../components/Gallery"
+import Description from "../components/Description"
 export default function Category () {
    const { category } = useParams()
     const products = data.filter((item) => item.category === category)
@@ -22,7 +22,7 @@ export default function Category () {
       )}
       </section>
            <Gallery />
-           <Description />
+         <Description />
            <Footer />
         </div>
      )
