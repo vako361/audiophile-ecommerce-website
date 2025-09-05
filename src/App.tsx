@@ -12,13 +12,11 @@ function App() {
     {
       path: "/:category",
       element: <Category />,
-     
     },
-        {
-          path: "/:category/:productId", // <-- relative path
-          element: <Product />,
-        },
-      
+    {
+      path: "/:category/:productId",
+      element: <Product />,
+    },
   ])
 
   return <RouterProvider router={router} />
